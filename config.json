@@ -1,0 +1,42 @@
+{
+  "name": "Sam's Source",
+  "identifier": "com.sam.altsource",
+  "subtitle": "IPAs, kept current",
+  "iconURL": "",
+  "headerURL": "",
+  "tintColor": "7e3cff",
+  "apps": [
+    {
+      "name": "Example App (auto-tracked from releases)",
+      "bundleIdentifier": "com.6gr8.exampleapp",
+      "developerName": "6gr8",
+      "localizedDescription": "Pulled automatically from the upstream repo's GitHub Releases.",
+      "iconURL": "https://6gr8.github.io/deno.io/icon.png",
+      "minOSVersion": "15.0",
+      "source": {
+        "mode": "releases",
+        "repo": "6gr8/deno.io",
+        "ipaAssetPattern": "\\.ipa$"
+      }
+    },
+    {
+      "name": "Example App (static, hand-listed)",
+      "bundleIdentifier": "com.6gr8.otherapp",
+      "developerName": "6gr8",
+      "localizedDescription": "Use this style if the IPAs are hosted as plain files, not Release assets.",
+      "iconURL": "https://6gr8.github.io/deno.io/icon2.png",
+      "minOSVersion": "14.0",
+      "source": {
+        "mode": "static",
+        "versions": [
+          {
+            "version": "1.2.0",
+            "date": "2026-06-11",
+            "downloadURL": "https://6gr8.github.io/deno.io/otherapp-1.2.0.ipa",
+            "size": 18234567
+          }
+        ]
+      }
+    }
+  ]
+}
